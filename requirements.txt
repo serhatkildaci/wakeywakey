@@ -1,0 +1,23 @@
+# Core dependencies for WakeyWakey Wake Word Detection
+# Optimized for deployment from microcontrollers to Raspberry Pi
+
+# Deep Learning Framework
+torch>=1.9.0
+torchaudio>=0.9.0
+
+# Audio Processing
+librosa>=0.8.0
+sounddevice>=0.4.0
+scipy>=1.7.0
+
+# Scientific Computing
+numpy>=1.19.0
+scikit-learn>=0.24.0
+
+# CLI and Utilities
+colorama>=0.4.4
+tqdm>=4.62.0
+PyYAML>=5.4.0
+
+# Python 2/3 compatibility
+pathlib2>=2.3.0; python_version<"3.4" 

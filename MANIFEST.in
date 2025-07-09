@@ -1,0 +1,52 @@
+# MANIFEST.in for WakeyWakey package distribution
+# Specifies additional files to include in the source distribution
+
+# Documentation
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+
+# Configuration files
+include requirements.txt
+include requirements-dev.txt
+include pyproject.toml
+include setup.py
+
+# Package data
+recursive-include wakeywakey/data *.pth *.yaml *.yml *.wav *.json
+recursive-include wakeywakey/configs *.yaml *.yml *.json
+
+# Documentation
+recursive-include docs *.md *.rst *.py *.txt
+recursive-include docs/source *.rst *.py
+recursive-include docs/build/html *
+
+# Examples and scripts
+recursive-include examples *.py *.md *.yaml *.wav
+recursive-include scripts *.py *.sh *.bat
+
+# Tests (for source distribution)
+recursive-include tests *.py
+
+# Exclude development and build files
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude .git*
+global-exclude .pytest_cache
+global-exclude .mypy_cache
+global-exclude .coverage
+global-exclude *.egg-info
+
+# Exclude build directories
+prune build
+prune dist
+prune .git
+prune .github
+prune .vscode
+prune .idea
+
+# Include version file if generated
+include wakeywakey/_version.py 

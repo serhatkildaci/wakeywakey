@@ -1,0 +1,189 @@
+[build-system]
+requires = ["setuptools>=45.0.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wakeywakey"
+dynamic = ["version"]
+description = "Lightweight wake word detection optimized for microcontrollers to Raspberry Pi"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Serhat Kildaci", email = "serhat.kildaci@example.com"}
+]
+maintainers = [
+    {name = "Serhat Kildaci", email = "serhat.kildaci@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Environment :: GPU :: NVIDIA CUDA",
+]
+keywords = [
+    "wake-word", "voice-detection", "speech-recognition", "tinyml", 
+    "microcontroller", "raspberry-pi", "pytorch", "neural-network",
+    "mfcc", "audio-processing", "embedded-systems", "edge-computing"
+]
+requires-python = ">=3.7"
+dependencies = [
+    "torch>=1.9.0",
+    "torchaudio>=0.9.0",
+    "numpy>=1.19.0",
+    "librosa>=0.8.0",
+    "sounddevice>=0.4.0",
+    "scikit-learn>=0.24.0",
+    "scipy>=1.7.0",
+    "colorama>=0.4.4",
+    "tqdm>=4.62.0",
+    "PyYAML>=5.4.0",
+    "pathlib2>=2.3.0; python_version<'3.4'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.12.0",
+    "black>=21.0.0",
+    "flake8>=3.9.0",
+    "mypy>=0.900",
+    "pre-commit>=2.15.0",
+    "twine>=3.4.0",
+    "wheel>=0.37.0",
+]
+training = [
+    "wandb>=0.12.0",
+    "optuna>=2.10.0",
+    "tensorboard>=2.7.0",
+    "matplotlib>=3.4.0",
+    "seaborn>=0.11.0",
+]
+optimization = [
+    "onnx>=1.10.0",
+    "onnxruntime>=1.9.0",
+    "openvino>=2021.4.0",
+    "tensorflow-lite>=2.6.0",
+]
+microcontroller = [
+    "micropython-lib>=1.9.0",
+    "circuitpython>=7.0.0",
+]
+all = [
+    "wakeywakey[dev,training,optimization]",
+]
+
+[project.urls]
+Homepage = "https://github.com/serhatkildaci/wakeywakey"
+Documentation = "https://github.com/serhatkildaci/wakeywakey/blob/main/docs/"
+Repository = "https://github.com/serhatkildaci/wakeywakey.git"
+"Bug Reports" = "https://github.com/serhatkildaci/wakeywakey/issues"
+Changelog = "https://github.com/serhatkildaci/wakeywakey/blob/main/CHANGELOG.md"
+
+[project.scripts]
+wakeywakey = "wakeywakey.cli.console:cli_entry_point"
+ww = "wakeywakey.cli.console:cli_entry_point"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "examples*", "docs*"]
+
+[tool.setuptools.package-data]
+wakeywakey = [
+    "data/models/*.pth",
+    "data/configs/*.yaml", 
+    "data/samples/*.wav",
+]
+
+[tool.setuptools_scm]
+write_to = "wakeywakey/_version.py"
+
+# Development tools configuration
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["wakeywakey"]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [
+    ".git",
+    "__pycache__",
+    "docs/source/conf.py",
+    "old",
+    "build",
+    "dist",
+    ".eggs",
+    "*.egg",
+]
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --strict-markers --disable-warnings"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.coverage.run]
+source = ["wakeywakey"]
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "setup.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\bProtocol\):",
+    "@(abc\.)?abstractmethod",
+] 
