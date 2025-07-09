@@ -79,68 +79,9 @@ setup(
         "mfcc", "audio-processing", "embedded-systems", "edge-computing"
     ],
     python_requires=">=3.7",
-    install_requires=[
-        "torch>=1.9.0",
-        "torchaudio>=0.9.0",
-        "numpy>=1.19.0",
-        "librosa>=0.8.0",
-        "sounddevice>=0.4.0",
-        "scikit-learn>=0.24.0",
-        "scipy>=1.7.0",
-        "colorama>=0.4.4",
-        "tqdm>=4.62.0",
-        "PyYAML>=5.4.0",
-        "pathlib2>=2.3.0; python_version<'3.4'",
-    ],
-    extras_require={
-        "dev": [
-            "pytest>=6.0.0",
-            "pytest-cov>=2.12.0",
-            "black>=21.0.0",
-            "flake8>=3.9.0",
-            "mypy>=0.900",
-            "pre-commit>=2.15.0",
-            "twine>=3.4.0",
-            "wheel>=0.37.0",
-        ],
-        "training": [
-            "wandb>=0.12.0",
-            "optuna>=2.10.0",
-            "tensorboard>=2.7.0",
-            "matplotlib>=3.4.0",
-            "seaborn>=0.11.0",
-        ],
-        "optimization": [
-            "onnx>=1.10.0",
-            "onnxruntime>=1.9.0",
-            "openvino>=2021.4.0",
-            "tensorflow-lite>=2.6.0",
-        ],
-        "microcontroller": [
-            "micropython-lib>=1.9.0",
-            "circuitpython>=7.0.0",
-        ],
-        "all": [
-            "wandb>=0.12.0",
-            "optuna>=2.10.0",
-            "tensorboard>=2.7.0",
-            "matplotlib>=3.4.0",
-            "seaborn>=0.11.0",
-            "onnx>=1.10.0",
-            "onnxruntime>=1.9.0",
-            "pytest>=6.0.0",
-            "pytest-cov>=2.12.0",
-            "black>=21.0.0",
-            "flake8>=3.9.0",
-            "mypy>=0.900",
-        ]
-    },
-    entry_points={
-        "console_scripts": [
-            "wakeywakey=wakeywakey.cli.console:cli_entry_point",
-            "ww=wakeywakey.cli.console:cli_entry_point",  # Short alias
-        ],
-    },
+    # Dependencies moved to pyproject.toml
+    # Optional dependencies moved to pyproject.toml
+    # Entry points moved to pyproject.toml
     include_package_data=True,
     package_data={
         "wakeywakey": [
@@ -151,7 +92,7 @@ setup(
     },
     zip_safe=False,  # Needed for proper resource access
     platforms=["any"],
-    license="MIT",
+
     
     # Additional metadata for PyPI
     download_url="https://github.com/serhatkildaci/wakeywakey/archive/v{}.tar.gz".format(get_version()),
@@ -162,12 +103,7 @@ setup(
         "setuptools>=45.0.0",
     ],
     
-    # Test configuration
-    test_suite="tests",
-    tests_require=[
-        "pytest>=6.0.0",
-        "pytest-cov>=2.12.0",
-    ],
+    # Test configuration moved to pyproject.toml
 )
 
 # Post-installation message

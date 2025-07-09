@@ -1,0 +1,19 @@
+# Development dependencies for WakeyWakey
+# Testing
+pytest>=6.0.0
+pytest-cov>=2.12.0
+
+# Code formatting and linting
+black>=21.0.0
+flake8>=3.9.0
+mypy>=0.900
+
+# Development tools
+pre-commit>=2.15.0
+twine>=3.4.0
+wheel>=0.37.0
+
+# Build tools
+build>=0.8.0
+setuptools>=45.0.0
+setuptools-scm>=6.2.0 
