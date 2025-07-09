@@ -41,7 +41,7 @@ if sys.version_info < (3, 7):
 
 # Main package data
 setup(
-    name="wakeywakey",
+    name="wakeyworddetection",
     version=get_version(),
     author="Serhat KILDACI",
     author_email="taserdeveloper@gmail.com",

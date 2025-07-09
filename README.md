@@ -27,13 +27,13 @@ WakeyWakey is a comprehensive wake word detection package that combines state-of
 
 ```bash
 # Basic installation
-pip install wakeywakey
+pip install wakeyworddetection
 
 # With training capabilities
-pip install wakeywakey[training]
+pip install wakeyworddetection[training]
 
 # Full installation with all features
-pip install wakeywakey[all]
+pip install wakeyworddetection[all]
 
 # Development installation
 git clone https://github.com/serhatkildaci/wakeywakey.git

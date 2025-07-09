@@ -18,7 +18,7 @@ Install WakeyWakey from PyPI:
 
 .. code-block:: bash
 
-   pip install wakeywakey
+   pip install wakeyworddetection
 
 Quick Start
 ===========

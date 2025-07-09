@@ -3,7 +3,7 @@ requires = ["setuptools>=45.0.0", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "wakeywakey"
+name = "wakeyworddetection"
 dynamic = ["version"]
 description = "Lightweight wake word detection optimized for microcontrollers to Raspberry Pi"
 readme = "README.md"
