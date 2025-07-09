@@ -408,12 +408,11 @@ pytest tests/test_performance.py --benchmark-only
 If you use WakeyWakey in your research, please cite:
 
 ```bibtex
-@software{wakeywakey2024,
+@software{wakeywakey2025,
   title = {WakeyWakey: Lightweight Wake Word Detection},
-  author = {Serhat Kildaci},
-  year = {2024},
-  url = {https://github.com/serhatkildaci/wakeywakey},
-  version = {0.1.0}
+  author = {Serhat KILDACI},
+  year = {2025},
+  url = {https://github.com/serhatkildaci/wakeywakey}
 }
 ```
 
@@ -431,27 +430,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Issues**: [GitHub Issues](https://github.com/serhatkildaci/wakeywakey/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/serhatkildaci/wakeywakey/discussions)
-- **Email**: serhat.kildaci@example.com
+- **Email**: taserdeveloper@gmail.com
 
 ## 🗺️ Roadmap
 
-### v0.2.0 (Q2 2024)
-- [ ] WebAssembly support for browser deployment
-- [ ] Flutter/React Native plugins
-- [ ] ARM optimization with NEON instructions
-- [ ] Real-time data augmentation
+### v0.2.0 (Q2 2025)
+- **Enhanced Model Architectures**: Transformer-based models, attention mechanisms
+- **Advanced Quantization**: 4-bit quantization, mixed precision
+- **Mobile Optimization**: Android/iOS SDKs with React Native bindings
 
-### v0.3.0 (Q3 2024)  
-- [ ] Federated learning support
-- [ ] Multi-language wake word support
-- [ ] Streaming model updates
-- [ ] Advanced noise robustness
+### v0.3.0 (Q3 2025)
+- **Multi-language Support**: Multilingual wake word detection
+- **Cloud Integration**: AWS/GCP/Azure deployment templates
+- **Advanced Analytics**: Comprehensive performance dashboards
 
-### v1.0.0 (Q4 2024)
-- [ ] Production-ready stability
-- [ ] Complete documentation
-- [ ] Performance guarantees
-- [ ] Enterprise support
+### v1.0.0 (Q4 2025)
+- **Production Release**: Enterprise-grade stability and performance
+- **Commercial Licensing**: Professional support and custom models
+- **Hardware Partnerships**: Certified integrations with major chip vendors
 
 ---
 

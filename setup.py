@@ -43,8 +43,8 @@ if sys.version_info < (3, 7):
 setup(
     name="wakeywakey",
     version=get_version(),
-    author="Serhat Kildaci",
-    author_email="serhat.kildaci@example.com",  # Replace with actual email
+    author="Serhat KILDACI",
+    author_email="taserdeveloper@gmail.com",
     description="Lightweight wake word detection optimized for microcontrollers to Raspberry Pi",
     long_description=long_description,
     long_description_content_type="text/markdown",

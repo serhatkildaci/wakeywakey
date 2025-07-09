@@ -25,8 +25,8 @@ CLI Usage:
 """
 
 __version__ = "0.1.0"
-__author__ = "Serhat Kildaci"
-__email__ = "serhat.kildaci@example.com"
+__author__ = "Serhat KILDACI"
+__email__ = "taserdeveloper@gmail.com"
 __license__ = "MIT"
 __description__ = "Lightweight wake word detection optimized for microcontrollers to Raspberry Pi"
 __url__ = "https://github.com/serhatkildaci/wakeywakey"

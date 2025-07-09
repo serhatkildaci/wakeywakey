@@ -9,10 +9,10 @@ description = "Lightweight wake word detection optimized for microcontrollers to
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Serhat Kildaci", email = "serhat.kildaci@example.com"}
+    {name = "Serhat KILDACI", email = "taserdeveloper@gmail.com"}
 ]
 maintainers = [
-    {name = "Serhat Kildaci", email = "serhat.kildaci@example.com"}
+    {name = "Serhat KILDACI", email = "taserdeveloper@gmail.com"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -120,12 +120,12 @@ include = '\.pyi?$'
 extend-exclude = '''
 /(
   # directories
-  \.eggs
-  | \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
+  \\.eggs
+  | \\.git
+  | \\.hg
+  | \\.mypy_cache
+  | \\.tox
+  | \\.venv
   | build
   | dist
 )/

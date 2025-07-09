@@ -8,7 +8,7 @@ FROM python:3.8-slim as builder
 ARG BUILDPLATFORM
 ARG TARGETPLATFORM
 
-LABEL maintainer="Serhat Kildaci <serhat.kildaci@example.com>"
+LABEL maintainer="Serhat KILDACI <taserdeveloper@gmail.com>"
 LABEL description="WakeyWakey - Lightweight Wake Word Detection"
 LABEL version="0.1.0"
 
