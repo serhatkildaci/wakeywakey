@@ -375,11 +375,6 @@ pytest tests/test_performance.py --benchmark-only
 
 ## 📚 Documentation
 
-- **API Reference**: [docs/api/](docs/api/)
-- **Training Guide**: [docs/training.md](docs/training.md)
-- **Deployment Guide**: [docs/deployment.md](docs/deployment.md)
-- **Architecture Details**: [docs/architecture.md](docs/architecture.md)
-- **Performance Tuning**: [docs/performance.md](docs/performance.md)
 
 ## 🎯 Use Cases
 
