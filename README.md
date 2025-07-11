@@ -432,28 +432,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: [GitHub Discussions](https://github.com/serhatkildaci/wakeywakey/discussions)
 - **Email**: taserdeveloper@gmail.com
 
-## 🗺️ Roadmap
-
-### v0.2.0 (Q2 2025)
-- **Enhanced Model Architectures**: Transformer-based models, attention mechanisms
-- **Advanced Quantization**: 4-bit quantization, mixed precision
-- **Mobile Optimization**: Android/iOS SDKs with React Native bindings
-
-### v0.3.0 (Q3 2025)
-- **Multi-language Support**: Multilingual wake word detection
-- **Cloud Integration**: AWS/GCP/Azure deployment templates
-- **Advanced Analytics**: Comprehensive performance dashboards
-
-### v1.0.0 (Q4 2025)
-- **Production Release**: Enterprise-grade stability and performance
-- **Commercial Licensing**: Professional support and custom models
-- **Hardware Partnerships**: Certified integrations with major chip vendors
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for the edge computing community**
+**Made with ❤️**
 
 [⭐ Star on GitHub](https://github.com/serhatkildaci/wakeywakey) • [🐛 Report Bug](https://github.com/serhatkildaci/wakeywakey/issues) • [💡 Request Feature](https://github.com/serhatkildaci/wakeywakey/issues)
 
